@@ -1,0 +1,61 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/css-3.png' %}">
+    <link rel="stylesheet" href="{% static 'css1/css/z-index.css' %}">
+{% endblock %}
+
+{% block title %} Z-index {% endblock %}
+
+
+{% block content %}
+    <div class="z-index-header">
+        <h2>z-index</h2>
+        <div class="navbar red-button">
+            <a href="{% url 'css' %}">უკან დაბრუნება</a>
+        </div>
+    </div>
+    <hr>
+    <div class="main-content">
+        <h3> V1</h3>
+        <div class="box">
+            <div class="z-index1">
+                <div class="circle red circle1">1</div>
+                <div class="circle green circle2">2</div>
+                <div class="circle blue circle3">3</div>
+            </div>
+            <div class="z-index1">
+                <div class="img">
+                    <img src="{% static 'css1/img/zindex1-1.png' %}" alt="test">
+                    <img src="{% static 'css1/img/zindex1-2.png' %}" alt="test">
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------- -->
+        <h3> V2 Hover</h3>
+        <div class="box">
+            <div class="z-index1">
+                <div class="circle red circle2-1">1</div>
+                <div class="circle green circle2-2">2</div>
+                <div class="circle blue circle2-3">3</div>
+            </div>
+            <div class="z-index1">
+                <div class="img">
+                    <img src="{% static 'css1/img/zindex2-1.png' %}" alt="test">
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------- -->
+        <h3> V3 Navbar</h3>
+        <div class="box">
+            <div class="z-index1">
+                <iframe src="{% static 'css1/img/position fixed.pdf' %}" frameborder="0"></iframe>
+                <div class="navbar m-left">
+                    <a href="{% url 'z-index-navbar' %}">გვერდზე გადასვლა</a>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------- -->
+    </div>
+    {% endblock %}

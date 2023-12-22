@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'javascript1/css/calculator.css' %}">
+    <script src="{% static 'javascript1/javascript/calculator.js' %}" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="back">
+        <a href="{% url 'js-lesson2' %}">უკან დაბრუნება</a>
+    </div>
+    <div class="main-content">
+        <div class="box bg-dark text-light">
+            <div class="container w-50 pt-5">
+                <h1>Calculator</h1>
+                <input 
+                    type="number"
+                    class="form-control mb-2"
+                    placeholder="შეიყვანეთ 1 ციფრი"
+                    id="input1"
+                    value="10"
+                >
+                <input 
+                    type="number"
+                    class="form-control mb-2"
+                    placeholder="შეიყვანეთ 2 ციფრი"
+                    id="input2"
+                    value="5"
+                >
+
+                <div class="d-flex mb-2">
+                    <button class="btn btn-success flex-grow-1 mx-2 math-btn green" id="plus">+</button>
+                    <button class="btn btn-danger flex-grow-1 mx-2 math-btn red" id="minus">-</button>
+                </div>
+
+                <div class="btnRes">
+                    <button class="btn btn-outline-info w-100 mb-2 btnSum" id="submit">გამოთვლა</button>
+                </div>
+
+                <div class="text-bg-light p-3 text-center resArea" >
+                    <h4>რეზულტატი:</h4>
+                    <p id="result" class="mb-0">49</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="testcube"></div>
+    <button id="testBtn">დაბეჭდვა</button>
+
+    <div id="testcube2"></div>
+    <button id="testBtn2">გადაადგილება</button>
+    <button id="testBtn3">რესეტი</button>
+
+    <div id="navbar">
+        <ul id="ul">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <button id="btnHide">დახურვა</button>
+    </div>
+</body>
+</html>

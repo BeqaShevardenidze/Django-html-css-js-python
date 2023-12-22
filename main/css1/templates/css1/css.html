@@ -1,0 +1,35 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/css-3.png' %}">
+    <link rel="stylesheet" href="{% static 'css1/css/css.css' %}">
+{% endblock %}
+
+{% block title %} CSS {% endblock %}
+
+
+{% block content %}
+    <div class="css-content">
+        <div class="css-header">
+            <div class="temp"></div>
+            <h2>CSS</h2>
+            <div class="navbar red">
+                <a href="{% url 'home' %}">უკან დაბრუნება</a>
+            </div>
+        </div>
+        <hr>
+        <div class="css-menu">
+            <div class="css-box">
+                <h4>Z-index</h4>
+                <a href="{% url 'z-index' %}">
+                    გადასვლა
+                </a>
+            </div>
+            <div class="css-box"></div>
+            <div class="css-box"></div>
+            <div class="css-box"></div>
+            <div class="css-box"></div>
+        </div>
+    </div>
+{% endblock %}

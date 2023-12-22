@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/html-5.png' %}">
+    <link rel="stylesheet" href="{% static 'html1/css/html1.css' %}">
+{% endblock %}
+
+{% block title %} HTML {% endblock %}
+
+
+{% block content %}
+    <div class="html-content">
+        <div class="html-header">
+            <div class="temp"></div>
+            <h2>HTML</h2>
+            <div class="navbar red">
+                <a href="{% url 'home' %}">უკან დაბრუნება</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="html-menu">
+            <div class="html-box">1</div>
+            <div class="html-box">2</div>
+            <div class="html-box">3</div>
+            <div class="html-box">4</div>
+            <div class="html-box">5</div>
+        </div>
+    </div>
+{% endblock %}

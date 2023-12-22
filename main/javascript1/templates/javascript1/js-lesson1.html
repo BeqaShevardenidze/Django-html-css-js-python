@@ -1,0 +1,52 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/java-script.png' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/javascript.css' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/js-lesson1.css' %}">
+    <script src="{% static 'javascript1/javascript/js-lesson1.js' %}"></script>
+{% endblock %}
+
+{% block title %} java-script {% endblock %}
+
+
+{% block content %}
+    <div class="main-content">
+        <div class="header">
+            <h2>Java-Script Lesson 1</h2>
+            <hr>
+            <div class="button-red">
+                <a href="{% url 'javascript' %}">უკან დაბრუნება</a>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="box">
+                <h2>1:</h2>
+                <p id="cont1"></p>
+            </div>
+            <div class="box">
+                <h2>2:</h2>
+                <h3>Date</h3>
+                <p id="cont2"></p>
+            </div>
+            <div class="box">
+                <h2>3:</h2>
+                <p id="cont3"></p>
+                <p id="cont3-2"></p>
+            </div>
+            <div class="box">
+                <h2>4:</h2>
+                <h3>OnClick</h3>
+                <button onclick="alert('hello \ntext')" class="button-onclick">დამაჭირე</button>
+            </div>
+            <div class="box">
+                <h2>5</h2>
+                <h3></h3>
+
+            </div>
+        </div>
+            
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %} ">
+    <script src="{% static 'home/js/main.js' %}"></script>
+    {% block link %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="logo">
+            <a href="#" class="a_logo">
+                <img src="{% static 'home/img/django.png' %}" alt="">
+            </a>
+            <a href="#"> Django.ge </a>
+        </div>
+        <div class="navbar">
+            <a href="">მთავარი</a>
+            <a href="">ჩვენს შესახებ</a>
+            <a href="">დახმარება</a>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
