@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons', sans-serif;
+}
+
+.card-image{
+    position: relative;
+    width: 150px;
+}

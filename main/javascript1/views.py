@@ -12,3 +12,6 @@ def jsLesson2(request):
 
 def calculator(request):
     return render(request, 'javascript1/calculator.html')
+
+def slider(request):
+    return render(request, 'javascript1/slider.html')

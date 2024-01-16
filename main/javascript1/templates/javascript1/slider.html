@@ -1,0 +1,29 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/java-script.png' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/slider.css' %}">
+    <script src="{% static 'javascript1/javascript/slider.js' %}"></script>
+{% endblock %}
+
+{% block title %} java-script Slider {% endblock %}
+
+
+{% block content %}
+    <div class="slider-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="{% static 'javascript1/img/1.jpg' %}" alt="1" class="card-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
