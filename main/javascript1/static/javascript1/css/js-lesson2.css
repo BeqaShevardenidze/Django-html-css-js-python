@@ -32,3 +32,16 @@
 .calculator > a:hover{
     text-decoration: none;
 }
+
+.slider{
+    text-align: center;
+}
+
+.slider > a{
+    padding: 0;
+    text-decoration: none;
+    color: aquamarine;
+}
+.slider > a:hover{
+    text-decoration: none;
+}

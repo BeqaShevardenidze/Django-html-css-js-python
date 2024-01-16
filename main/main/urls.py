@@ -28,11 +28,7 @@ from css1.views import css
 from css1.views import zindex
 from css1.views import zindexnavbar
 
-from javascript1.views import javascript
-from javascript1.views import jsLesson1
-from javascript1.views import jsLesson2
-from javascript1.views import calculator
-from javascript1.views import slider
+from javascript1.views import javascript, jsLesson1, jsLesson2, calculator, slider, gptslider
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -47,6 +43,7 @@ urlpatterns = [
     path('javascript/js-lesson1', jsLesson1, name='js-lesson1'),
     path('javascript/js-lesson2', jsLesson2, name='js-lesson2'),
     path('javascript/calculator', calculator, name='calculator'),
-    path('javascript/slider', slider, name='slider')
+    path('javascript/slider', slider, name='slider'),
+    path('javascript/gpt-slider', gptslider, name='gpt-slider'),
 
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

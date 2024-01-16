@@ -11,18 +11,30 @@
 
 
 {% block content %}
-    <div class="slider-container">
-        <div class="slide-content">
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="image-content">
-                        <span class="overlay"></span>
-
-                        <div class="card-image">
-                            <img src="{% static 'javascript1/img/1.jpg' %}" alt="1" class="card-img">
-                        </div>
-                    </div>
+    <div class="slider-header">
+        <h2>My Slider</h2>
+        <div class="back">
+            <a href="{% url 'js-lesson2' %}">უკან დაბრუნება</a>
+        </div>
+    </div>
+    <hr>
+    <div class="main-content">
+        <div class="slider">
+            <div class="frame">
+                <div class="main-box" id="main-box">
+                    <div class="box">1</div>
+                    <div class="box">2</div>
+                    <div class="box">3</div>
+                    <div class="box">4</div>
                 </div>
+            </div>
+        </div>
+        <div class="button">
+            <div class="left" id="left">
+                <img src="{% static 'javascript1/img/left-arrow.png' %}" alt="left">
+            </div>
+            <div class="right" id="right">
+                <img src="{% static 'javascript1/img/right-arrow.png' %}" alt="left">
             </div>
         </div>
     </div>

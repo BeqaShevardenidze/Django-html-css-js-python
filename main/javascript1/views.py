@@ -15,3 +15,6 @@ def calculator(request):
 
 def slider(request):
     return render(request, 'javascript1/slider.html')
+
+def gptslider(request):
+    return render(request, 'javascript1/gpt-slider.html')

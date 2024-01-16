@@ -1,0 +1,38 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/java-script.png' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/gpt-slider.css' %}">
+    <script src="{% static 'javascript1/javascript/gpt-slider.js' %}"></script>
+{% endblock %}
+
+{% block title %} java-script Slider {% endblock %}
+
+
+{% block content %}
+    <div class="slider-header">
+        <h2>GPT Slider</h2>
+        <div class="back">
+            <a href="{% url 'js-lesson2' %}">უკან დაბრუნება</a>
+        </div>
+    </div>
+    <hr>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide">
+                <img src="{% static 'javascript1/img/1.jpg' %}" alt="img1">
+            </div>
+            <div class="slide">
+                <img src="{% static 'javascript1/img/2.jpg' %}" alt="img2">
+            </div>
+            <div class="slide">
+                <img src="{% static 'javascript1/img/3.jpg' %}" alt="img3">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+{% endblock %}
