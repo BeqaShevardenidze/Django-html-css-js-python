@@ -1,0 +1,63 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/java-script.png' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/javascript.css' %}">
+{% endblock %}
+
+{% block title %} java-script {% endblock %}
+
+
+{% block content %}
+    <div class="main-content">
+        <div class="header">
+            <h2>java-script</h2>
+            <hr>
+            <div class="button-red">
+                <a href="{% url 'home' %}">უკან დაბრუნება</a>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="box">
+                <a href="{% url 'js-lesson1' %}">Lesson 1</a>
+                <p>ჯავასქრიპტზე გაცნობა</p>
+            </div>
+            <div class="box">
+                <a href="{% url 'js-lesson2' %}">Lesson 2</a>
+                <p>ცვლადები</p>
+            </div>
+            <div class="box">
+                <a href="">Lesson 3</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 4</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 5</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 6</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 7</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 8</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 9</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 10</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 11</a>
+            </div>
+            <div class="box">
+                <a href="">Lesson 12</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

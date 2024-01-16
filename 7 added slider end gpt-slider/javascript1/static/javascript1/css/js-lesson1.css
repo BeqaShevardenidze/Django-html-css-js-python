@@ -1,0 +1,19 @@
+.box{display: grid;}
+
+.box > h2{padding: 0; text-align: center;}
+
+.box > h3{padding: 0; text-align: center;}
+
+.box > p{padding: 0; text-align: center;}
+
+.box > .button-onclick{
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 0px;
+    transition: all .3s linear;
+}
+.box > .button-onclick:hover{
+    border-radius: 0 10px;
+}

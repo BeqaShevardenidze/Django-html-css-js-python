@@ -1,0 +1,135 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.back{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.back > a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+    color: antiquewhite;
+    transition: all .3s linear;
+}
+.back > a:hover{
+    color: blueviolet;
+}
+
+.main-content{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(45, 48, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(139, 133, 156);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container > h1{
+    text-align: center;
+    font-weight: 100;
+}
+
+.container > input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.math-btn{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.red{background-color: rgb(235, 81, 81);}
+.green{background-color: rgb(171, 231, 80);}
+
+.btnRes{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSum{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(103, 138, 255);
+    margin-bottom: 10px;
+}
+
+.resArea{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.resArea > p{
+    background-color: black;
+    color: antiquewhite;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#testcube{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#testcube2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: all .3s linear;
+}
+
+#navbar{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+    visibility: visible;
+}
+
+#navbar > ul{
+    display: flex;
+    gap: 50px;
+}

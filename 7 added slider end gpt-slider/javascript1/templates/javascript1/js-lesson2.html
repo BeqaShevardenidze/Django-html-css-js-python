@@ -1,0 +1,59 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="icon" href="{% static 'home/img/java-script.png' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/javascript.css' %}">
+    <link rel="stylesheet" href="{% static 'javascript1/css/js-lesson2.css' %}">
+    <script src="{% static 'javascript1/javascript/js-lesson2.js' %}"></script>
+{% endblock %}
+
+{% block title %} java-script {% endblock %}
+
+
+{% block content %}
+    <div class="main-content">
+        <div class="header">
+            <h2>Java-Script Lesson 2</h2>
+            <hr>
+            <div class="button-red">
+                <a href="{% url 'javascript' %}">უკან დაბრუნება</a>
+            </div>
+        </div>
+
+        <div class="main-menu">
+            <div class="box">
+                <h2>1:</h2>
+                <p id="cont1"></p>
+                <p id="cont1-2"></p>
+                <p id="cont1-3"></p>
+            </div>
+
+            <div class="box cont2">
+                <h2>2:</h2>
+                <h3>Variable name Can Do</h3>
+                <p id="cont2"></p>
+            </div>
+
+            <div class="box">
+                <h2>3:</h2>
+                <h3>Resrtricted</h3>
+                <p id="cont3"></p>
+            </div>
+
+            <div class="box calculator">
+                <h2>4:</h2>
+                <a href="{% url 'calculator' %}">
+                    Calculator
+                </a>
+            </div>
+
+            <div class="box slider">
+                <h2>5:</h2>
+                <a href="{% url 'slider' %}">My Slider</a>
+                <a href="{% url 'gpt-slider' %}">GPT Slider</a>
+            </div>
+        </div>
+            
+    </div>
+{% endblock %}

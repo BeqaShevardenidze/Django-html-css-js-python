@@ -1,0 +1,105 @@
+.content{
+    display: block;
+    margin: 2% 2% 0 2%;
+}
+
+.slider-header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.slider-header h2{
+    color: antiquewhite;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.slider-header .back{
+    width: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+.slider-header .back a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .3s linear;
+    background-color: rgb(139, 38, 38);
+}
+
+.slider-header .back a:hover{
+    color: black;
+    background-color: rgb(250, 1, 1);
+    border-radius: 0 10px;
+    transform: scale(1.1);
+}
+
+/* -----main content---- */
+
+.main-content{
+    color: black;
+}
+
+.slider{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(36, 138, 112);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-left: 240%;
+    /* margin-left: 80%; */
+    /* margin-left: -80%; */
+    /* margin-left: -240%; */
+    transition: all .3s linear;
+}
+
+.box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: rgb(36, 97, 138);
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    margin: 20px 45% 0 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.button img{
+    width: 30px;
+    cursor:pointer;
+    transition: all .3s linear;
+}
+.button img:hover{
+    transform: scale(1.1);
+}
