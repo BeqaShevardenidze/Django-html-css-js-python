@@ -13,6 +13,7 @@
     color: antiquewhite;
     font-weight: 100;
     font-size: 30px;
+    text-align: center;
 }
 
 .slider-header .back{
@@ -102,4 +103,24 @@
 }
 .button img:hover{
     transform: scale(1.1);
+}
+
+
+/* -----slider N2 header----- */
+.slider-header2{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-header2 h2{
+    color: antiquewhite;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.slider2{
+    
 }
