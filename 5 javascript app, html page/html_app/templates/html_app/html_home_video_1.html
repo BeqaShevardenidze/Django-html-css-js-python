@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Html Page {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'html_app/styles/html_home_video_1.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+    <div class="html_header_video_1_header">
+        <div class="html_link_video_1_header">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <span>></span>
+            <a href="{% url 'html_home' %}">HTML</a>
+        </div>
+        <h1>Video Lesson 1</h1>
+        <hr>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quo distinctio, sapiente, enim adipisci quod quae amet eos iste itaque error? Quae esse doloribus praesentium molestias, minima culpa tenetur suscipit.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=NcHyE_N1QDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://drive.google.com/file/d/1uYFeeD9b1qTHebuzPDjTaHrRJi8QfYTK/view?usp=sharing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!-- <iframe src="https://drive.google.com/file/d/1uYFeeD9b1qTHebuzPDjTaHrRJi8QfYTK/view?usp=sharing" width="640" height="480" allow="autoplay"></iframe> -->
+
+
+
+    </div>
+{% endblock %}

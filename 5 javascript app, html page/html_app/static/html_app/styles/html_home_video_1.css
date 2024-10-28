@@ -1,0 +1,30 @@
+.content{
+    display: block;
+    margin: 0 20px;
+}
+
+.html_link_video_1_header{
+    width: 100%;
+    text-align: end;
+    margin-top: 20px;
+}
+
+.html_link_video_1_header a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: all .3s linear;
+}
+.html_link_video_1_header a:hover{
+    background-color: rgb(102, 221, 189);
+    color: black;
+}
+
+.html_link_video_1_header a:last-child{
+    margin-right: 20px;
+}
+
+.html_header_video_1_header h1{
+    color: antiquewhite;
+    text-align: center;
+}

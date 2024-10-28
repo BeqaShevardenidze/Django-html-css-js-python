@@ -1,0 +1,26 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Html Page {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'html_app/styles/html_home.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+    <div class="html_header">
+        <h1>HTML გვერდი</h1>
+        <hr>
+    </div>
+
+    <div class="html_content">
+        <div class="html_box">
+            <div class="html_box_content"></div>
+        </div>
+        <div class="html_box">
+            <div class="html_box_content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, laboriosam facere ab atque in cum ex minus iste commodi laborum eum nulla illum dolores vel sint dignissimos sapiente debitis est!  
+            </div>
+        </div>
+    </div>
+{% endblock %}
