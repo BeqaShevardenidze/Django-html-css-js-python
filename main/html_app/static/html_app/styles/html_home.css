@@ -12,6 +12,23 @@
 
 .html_link a{
     /* width: 100px; */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: all .3s linear;
+}
+.html_link a:hover{
+    background-color: rgb(102, 221, 189);
+    color: black;
+    transform: scale(1.1);
+}
+
+.span_right{
+    margin-right: 10px;
+}
+
+.span_color{
+    color: antiquewhite;
 }
 
 .html_header h1{

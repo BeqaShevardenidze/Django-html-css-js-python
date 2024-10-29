@@ -25,6 +25,12 @@
     margin-right: 20px;
 }
 
+.span_color{
+    color: antiquewhite;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
 .html_header_video_1_header h1{
     color: antiquewhite;
     text-align: center;
@@ -114,10 +120,30 @@
 
 .script{
     width: 80%;
-    height: 500px;
+    height: 700px;
     margin-top: 20px;
-    background-color: rgb(1, 36, 86);
+    /* background-color: rgb(1, 36, 86); */
+    background-color: #005a63;
+    /* color: antiquewhite; */
+    color: #06d6a0;
+}
+
+.script h2{
+    text-align: center;
     color: antiquewhite;
+}
+
+.script ul li{
+    margin-bottom: 10px;
+}
+
+.script ul li span{
+    color: rgb(168, 44, 199);
+}
+
+.script ul li img{
+    margin-top: 20px;
+    width: 400px;
 }
 
 .margin-top-hr{
@@ -139,5 +165,24 @@
     iframe{
         width: 300px;
         height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .script ul li img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .script ul li img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .script ul li img{
+        width: 150px;
     }
 }

@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .console {
@@ -53,6 +54,29 @@ textarea {
 }
 #livePreview h2{
     margin-top: 20px;
+}
+
+
+/* -----vscode-theme-------- */
+.vscode-theme {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    outline: none;
+    resize: both;
+}
+
+.vscode-theme::selection {
+    background: #264f78; 
+    color: #ffffff;
+}
+.vscode-theme::placeholder {
+    color: #6a9955;
+    opacity: 1;
 }
 
 
