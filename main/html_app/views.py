@@ -6,3 +6,6 @@ def html_home(request):
 
 def html_home_video_1(request):
     return render(request, 'html_app/html_home_video_1.html')
+
+def html_home_video_2(request):
+    return render(request, 'html_app/html_home_video_2.html')

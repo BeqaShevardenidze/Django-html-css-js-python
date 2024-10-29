@@ -1,0 +1,46 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block title %} Html Video 2 {% endblock %}
+{% block link %} 
+    <link rel="stylesheet" href="{% static 'html_app/styles/html_home_video_2.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+
+    <div class="html_header_video_2_header">
+        <div class="html_link_video_2_header">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <span>></span>
+            <a href="{% url 'html_home' %}">HTML</a>
+            <span>></span>
+            <span class="span_color">HTML ვიდეო ლექცია 2</span>
+        </div>
+        <h1> <span>HTML</span> ვიდეო <br> ლექცია 2</h1>
+        <hr>
+
+        <div class="html_video_2">
+            <div class="html_video_2_part_1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uhEchDiLPO0?si=S-ln2diDiQNIM4u9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <a href="https://www.youtube.com/watch?v=uhEchDiLPO0&list=PLYKbEUQ15MtStLr4zMQbAWUfKjD9ghx14&index=3" target="_blank">ვიდეოზე გადასვლა</a>
+            </div>
+
+            <div class="html_video_2_part_2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Pd3FBozJMYs?si=FP4k2zoIP2v_Vxou" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <a href="https://www.youtube.com/watch?v=Pd3FBozJMYs&list=PLYKbEUQ15MtStLr4zMQbAWUfKjD9ghx14&index=4" target="_blank">ვიდეოზე გადასვლა</a>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <hr class="margin-top-hr">
+
+        {% include 'html_app/html_home_console.html' %}
+    </div>
+
+{% endblock %}
