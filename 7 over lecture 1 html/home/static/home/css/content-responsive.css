@@ -1,0 +1,59 @@
+
+
+@media screen and (max-width: 1200px){
+    .box{
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .box{
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .box{
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .content{
+        grid-template-columns: auto;
+    }
+
+    .box{
+        width: 70vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 60vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .box{
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .box{
+        width: 35vh;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .box{
+        width: 25vh;
+    }
+}
+
+@media screen and (max-width: 412px) and (max-height: 915px) {
+    .box{
+        width: 10vh;
+    }
+}

@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/css/main.css' %} ">
+    <link rel="icon" href="{% static 'home/img/django.png' %}">
+    <script src="{% static 'home/js/main.js' %}"></script>
+    {% block link %} {% endblock %}
+    <title>{% block title %} {% endblock %}</title>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="logo">
+            <a href="{% url 'home' %}" class="a_logo">
+                <img src="{% static 'home/img/django.png' %}" alt="">
+            </a>
+            <a href="{% url 'home' %}"> Django.ge </a>
+        </div>
+        <div class="navbar">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <a href="#">ჩვენს შესახებ</a>
+            <a href="#">დახმარება</a>
+        </div>
+    </div>
+
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <div class="footer">
+
+        <div class="b">
+            <p>Copyright © 2024 B.Sh All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
