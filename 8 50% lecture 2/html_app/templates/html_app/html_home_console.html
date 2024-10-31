@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'html_app/styles/html_home_console.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="html_console">
+        <h1>HTML კონსოლი</h1>
+
+        <div class="console">
+            <h3>HTML</h3>
+            <textarea id="htmlCode" placeholder="ჩაწერეთ HTML კოდი" class="vscode-theme"></textarea>
+        </div>
+
+        <button id="runCode">გაშვება</button>
+
+        <h2>ჩაწერილი კოდის რეზულტატი</h2>
+        
+        <div id="livePreview">
+            <!-- აქ დაიბეჭდება HTML -->
+        </div>
+    </div>
+
+
+    <script src="{% static 'html_app\js\js.js' %}" ></script>
+</body>
+</html>

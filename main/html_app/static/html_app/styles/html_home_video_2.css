@@ -70,6 +70,49 @@
     border-radius: 20px;
 }
 
+/* -----html content 2------ */
+.html_content_2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.script{
+    width: 80%;
+    /* height: 700px; */
+    margin-top: 20px;
+    /* background-color: rgb(1, 36, 86); */
+    background-color: #005a63;
+    /* color: antiquewhite; */
+    color: #06d6a0;
+    border-radius: 30px;
+}
+
+.script h2{
+    text-align: center;
+    color: antiquewhite;
+}
+
+.script ul li{
+    margin-bottom: 10px;
+}
+
+.script ul li span{
+    /* color: rgb(168, 44, 199); */
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.script ul li img{
+    margin-top: 20px;
+    width: 400px;
+}
+
+.img_hidden{
+    display: none;
+}
 
 
 .margin-top-hr{

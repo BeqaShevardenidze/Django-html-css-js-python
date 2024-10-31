@@ -1,0 +1,40 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/content-responsive.css' %}">
+{% endblock %}
+
+{% block title %} Home Page {% endblock %}
+
+
+{% block content %} 
+    <div class="main">
+        <div class="header">
+            <h1>მთავარი გვერდი</h1>
+            <hr>
+        </div>
+
+        <div class="content">
+            <div class="box">
+                <img src="{% static 'home/img/html-5.png' %}" alt="HTML">
+                <a href="{% url 'html_home' %}">HTML</a>
+            </div>
+            <div class="box">
+                <img src="{% static 'home/img/css-3.png' %}" alt="CSS">
+                <a href="">CSS</a>
+            </div>
+            
+            <div class="box">
+                <img src="{% static 'home/img/java-script.png' %}" alt="JS">
+                <a href="{% url 'javascript_home' %}">Java Script</a>
+            </div>
+            <div class="box">
+                <img src="{% static 'home/img/python.png' %}" alt="Python">
+                <a href="">Python</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Html Page {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'html_app/styles/html_home.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+    <div class="html_header">
+        <div class="html_link">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <span class="span_right">></span>
+            <span class="span_color">HTML გვერდი</span>
+        </div>
+        <h1>HTML გვერდი</h1>
+        <hr>
+    </div>
+
+    <div class="html_content">
+        <div class="html_box">
+            <div class="html_box_content">
+                <h3>Html Video 1</h3>
+                <h5>დასაწყისი: <br> VsCode-ს ინსტალაცია</h5>
+                <a href="{% url 'html_home_video_1' %}">გადასვლა</a>
+            </div>
+        </div>
+
+        <div class="html_box">
+            <div class="html_box_content">
+                <h3>Html Video 2</h3>
+                <h5>დასაწყისი</h5>
+                <a href="{% url 'html_home_video_2' %}">გადასვლა</a>
+            </div>
+        </div>
+        
+    </div>
+{% endblock %}

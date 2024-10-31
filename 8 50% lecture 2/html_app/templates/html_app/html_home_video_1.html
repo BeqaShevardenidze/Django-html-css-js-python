@@ -1,0 +1,81 @@
+{% extends 'home/base.html' %}
+
+<!-- html_app/html_home_console.html -->
+{% load static %}
+
+{% block title %} Html Video 1 {% endblock %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'html_app/styles/html_home_video_1.css' %}">
+{% endblock %}
+
+
+
+{% block content %} 
+    <div class="html_header_video_1_header">
+        <div class="html_link_video_1_header">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <span>></span>
+            <a href="{% url 'html_home' %}">HTML</a>
+            <span>></span>
+            <span class="span_color">HTML ვიდეო ლექცია 1</span>
+        </div>
+        <h1> <span>HTML</span> ვიდეო <br> ლექცია 1</h1>
+        <hr>
+
+        <div class="html_video_1">
+            <div class="html_video_1_part_1">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MEd_qhYxf8M?si=y7weyTDfgA1scKrB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <a href="https://youtu.be/MEd_qhYxf8M" target="_blank">ვიდეოზე გადასვლა</a>
+            </div>
+        
+            <div class="html_video_1_part_2">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/m2Dt02uz4Oc?si=kZ3bMt6KJ_nTB2pn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <a href="https://www.youtube.com/watch?v=m2Dt02uz4Oc" target="_blank">ვიდეოზე გადასვლა</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="vscode_link">
+            <div class="vscode_link_header">
+                <img src="{% static 'html_app/img/vscode.png' %}" alt="">
+                <h2>VsCode-ს გადმოწერა</h2>
+            </div>
+            <div class="download_center">
+                <a href="https://code.visualstudio.com/download" target="_blank">გადმოწერა</a>
+            </div>
+        </div>
+
+        <div class="html_content_1">
+            <div class="script">
+                <h2>ახალი პროექტის შექმნა</h2>
+                <ul>
+                    <li>დესკტოპტზე შევქმნათ საქაღალდე სახელად: ლექცია 1</li>
+                    <li>
+                        ლექცია 1 საქაღალდეში შევქმნათ ფაილი სახელად <span>index.html</span> 
+                        <br>
+                        <img src="{% static 'html_app/img/screen_leqcia_1.png' %}" alt="index.html">
+                    </li>
+                    <li>
+                        საქაღალდის მისამართში ჩაწერეთ cmd და შემდეგ Enter ღილაკს დააჭირეთ
+                        <br>
+                        <img src="{% static 'html_app/img/screen_cmd.png' %}" alt="cmd">
+                    </li>
+                    <li>
+                        ტერმინალში ჩაწერეთ code .   და გაიხსნება VsCode
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="margin-top-hr">
+
+        
+        {% include 'html_app/html_home_console.html' %}
+
+
+
+    </div>
+{% endblock %}
