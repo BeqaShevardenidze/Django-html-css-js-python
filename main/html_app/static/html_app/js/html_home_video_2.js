@@ -48,3 +48,21 @@ btn_visible_4.addEventListener('click', () => f_test('.img_visible_4'));
 
 btn_visible_5.addEventListener('click', () => f_test('.img_visible_5'));
 btn_visible_5.addEventListener('click', () => f_test('.img_visible_6'));
+
+
+
+// for image zoom
+function f_zoomed(html_class){
+    document.getElementById(html_class).addEventListener('click',
+        function(){
+            this.classList.toggle('zoomed');
+        }
+    )
+}
+
+f_zoomed('image')
+f_zoomed('image2')
+f_zoomed('image3')
+f_zoomed('image4')
+f_zoomed('image5')
+f_zoomed('image6')
