@@ -24,6 +24,8 @@ const btn_visible_4 = document.querySelector('.btn_visible_4')
 
 const btn_visible_5 = document.querySelector('.btn_visible_5')
 
+const btn_visible_7 = document.querySelector('.btn_visible_7')
+
 function f_test(html_class){
     const img_visible_1 = document.querySelector(html_class)
     
@@ -49,6 +51,8 @@ btn_visible_4.addEventListener('click', () => f_test('.img_visible_4'));
 btn_visible_5.addEventListener('click', () => f_test('.img_visible_5'));
 btn_visible_5.addEventListener('click', () => f_test('.img_visible_6'));
 
+btn_visible_7.addEventListener('click', () => f_test('.img_visible_7'));
+
 
 
 // for image zoom
@@ -66,3 +70,4 @@ f_zoomed('image3')
 f_zoomed('image4')
 f_zoomed('image5')
 f_zoomed('image6')
+f_zoomed('image7')

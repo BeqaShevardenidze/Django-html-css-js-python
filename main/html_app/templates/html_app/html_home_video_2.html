@@ -90,11 +90,71 @@
             </div>
         </div>
 
-        <hr class="margin-top-hr">
         
-        {% include 'html_app/html_home_console.html' %}
-    </div>
+        <div class="html_content_2">
+            <div class="script">
+                
+                <h2>Html დოკუმენტის სტრუქტურა</h2>
+                <ul>
+                    <li> 
+                        <p>
+                            <span> < !DOCTYPE html> </span>
+                            <ul>
+                                <li>
+                                    ეს არის დოკუმენტის ტიპის დეკლარაცია.
+                                </li>
+                                <li>
+                                    ის მითითებას აძლევს ბრაუზერს რომ დოკუმენტი დაწერილია HTML5 ვერსიაზე.
+                                </li>
+                                <li>
+                                    ამ კოდის ფრაგმენტის გარეშე ბრაუზერმა შეიძლება ავტომატურად გადართოს HTML -ის დოკუმენტის სხვა ვერსიაზე, რის შემდეგაც დაირღვევა საიტის ვიზუალური სტრუქტურა
+                                </li>
+                            </ul>
+                        </p> 
+                    </li>
+
+                    <li>
+                        <p>
+                            <span> < html lang="en"> </span>
+                            <ul>
+                                <li>
+                                    html ტეგში მოტავსებული ატრიბუტი lang="en" ნიშნავს რომ გვერდი დაწერილია ინგლისურ ენაზე. 
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <span> &lt;head&gt; </span>
+                            <ul>
+                                <li>
+                                    სექცია არის მეტამონაცემების და დამხმარე ინფორმაციისთვის, რომელიც გვერდზე არ ჩანს, მაგრამ გამოიყენება ბრაუზერის მიერ.
+                                </li>
+                                <li>
+                                    ამ სექციაში ხშირად შედის: <br>
+                                    a) <span> < meta charset="UTF-8"> </span>
+აღნიშნავს დოკუმენტის კოდის ფორმატს.
+UTF-8 მხარს უჭერს მსოფლიოს სხვადასხვა ენას, რაც უზრუნველყოფს ტექსტის სწორ გამოტანას.
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <hr class="margin-top-hr">
     
-    <script src="{% static 'html_app\js\html_home_video_2.js' %}"></script>
+    </div>
+
+
+
+
+    {% include 'html_app/html_home_console.html' %}
+    
+    <script src="{% static 'html_app\js\html_home_video_2.js' %}">
+    </script>
 
 {% endblock %}
