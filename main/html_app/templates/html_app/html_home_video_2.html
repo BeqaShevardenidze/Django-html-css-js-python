@@ -45,7 +45,9 @@
                     <li> 
                         <p>
                             <span>Index.html</span> ფაილში ჩავწეროთ !
-                            <button class="btn_visible_style btn_visible_1">სქრინი</button>
+                            <div class="btn_center">
+                                <button class="btn_visible_style btn_visible_1">სქრინი</button>
+                            </div>
                             <br>
                             <img src="{% static 'html_app/img/screen_leqcia_2_1.png' %}" alt="1" class="img_hidden img_visible_1" id="image">
                         </p> 
@@ -53,7 +55,9 @@
                     <li>
                         <p>
                             შემდეგ <span>Enter</span>  -ს დავაწვეთ
-                            <button class="btn_visible_style btn_visible_2">სქრინი</button>
+                            <div class="btn_center">
+                                <button class="btn_visible_style btn_visible_2">სქრინი</button>
+                            </div>
                             <br>
                             <img src="{% static 'html_app/img/screen_leqcia_2_2.png' %}" alt="2" class="img_hidden img_visible_2" id="image2">
                         </p>
@@ -61,7 +65,9 @@
                     <li>
                         <p>
                             დააჭირეთ <span> ALT + Z</span> რომ დამალული ტექსტი ქვედა სქროლის გარეშე გამოჩნდეს
-                            <button class="btn_visible_style btn_visible_3">სქრინი</button>
+                            <div class="btn_center">
+                                <button class="btn_visible_style btn_visible_3">სქრინი</button>
+                            </div>
                             <br>
                             <img src="{% static 'html_app/img/screen_leqcia_2_3.png' %}" alt="3" class="img_hidden img_visible_3" id="image3">
                         </p>
@@ -71,7 +77,9 @@
                             <span>Search</span> - ის გამოყენება
                             <br>
                             ჩავწეროთ მაგალითად <span>title</span> და html დოკუმენტში ყველას მოგიძებნით
-                            <button class="btn_visible_style btn_visible_4">სქრინი</button>
+                            <div class="btn_center">
+                                <button class="btn_visible_style btn_visible_4">სქრინი</button>
+                            </div>
                             <br>
                             <img src="{% static 'html_app/img/screen_leqcia_2_4.png' %}" alt="4" class="img_hidden img_visible_4"  id="image4">
                         </p>
@@ -80,7 +88,10 @@
                     <li>
                         <p>
                             თუ მაგალიდად <span>Replace</span> -ში ჩავწერთ სხვა ტეგს ან რამე ტექსტს, <span>title</span> - ს სადაც ნახავს ყველგან შეცვლის
-                            <button class="btn_visible_style btn_visible_5">სქრინი</button>
+                            <div class="btn_center">
+                                <button class="btn_visible_style btn_visible_5">სქრინი</button>
+                            </div>
+
                             <br>
                             <img src="{% static 'html_app/img/screen_leqcia_2_5.png' %}" alt="5" class="img_hidden img_visible_5" id="image5">
                             <img src="{% static 'html_app/img/screen_leqcia_2_6.png' %}" alt="6" class="img_hidden img_visible_6" id="image6">
@@ -92,10 +103,13 @@
 
         
         <div class="html_content_2">
-            <div class="script">
-                
+            <div class="script" >
                 <h2>Html დოკუმენტის სტრუქტურა</h2>
-                <ul>
+                <div class="btn_center">
+                    <button class="btn_visible_style html_doc_struct_btn">ვრცლად</button>
+                </div>
+                <br>
+                <ul class="html_doc_struct_ul">
                     <li> 
                         <p>
                             <span> < !DOCTYPE html> </span>
@@ -133,15 +147,39 @@
                                 </li>
                                 <li>
                                     ამ სექციაში ხშირად შედის: <br>
-                                    a) <span> < meta charset="UTF-8"> </span>
-აღნიშნავს დოკუმენტის კოდის ფორმატს.
-UTF-8 მხარს უჭერს მსოფლიოს სხვადასხვა ენას, რაც უზრუნველყოფს ტექსტის სწორ გამოტანას.
+                                    a) <span> < meta charset="UTF-8"> </span> 
+                                    <br>
+                                    აღნიშნავს დოკუმენტის კოდის ფორმატს. UTF-8 მხარს უჭერს მსოფლიოს სხვადასხვა ენას, რაც უზრუნველყოფს ტექსტის სწორ გამოტანას.
+                                    <br> <br>
+
+                                    b) <span>< meta name="viewport" content="width=device-width, initial-scale=1.0"> </span> 
+                                    <br>
+                                    აყენებს პარამეტრებს სხვადასხვა მოწყობილობების ეკრანზე გამოსახვისთვის. width=device-width აყენებს გვერდის სიგანეს მოწყობილობის ეკრანის სიგანეზე. initial-scale=1.0 განსაზღვრავს გვერდის საწყის მასშტაბს.
+
+                                    <br> <br>
+
+                                    c) <span>< title>Document < /title> </span> განსაზღვრავს გვერდის სათაურს, რომელიც: ჩანს ბრაუზერის ფანჯრის თავში. ჩნდება საძიებო სისტემის შედეგებში.
                                 </li>
                             </ul>
                         </p>
                     </li>
 
+                    <li>
+                        <p>
+                            <span> < body> </span>
+                            <br>
+                            მთავარი ტეგი შიგთავსისთვის, რომელიც მომხმარებელს გვერდზე უჩანს. აქ მოთავსებულია ისეთი ელემენტები, როგორებიცაა ტექსტი, სურათები, ვიდეოები, ღილაკები, ბმულები და სხვა. ყველა ვიზუალური ელემენტი ამ ნაწილშია მოთავსებული.
+                        </p>
+                    </li>
+
                 </ul>
+            </div>
+        </div>
+
+        <div class="html_content_2">
+            <div class="script" >
+                <h2>Html ტეგები</h2>
+
             </div>
         </div>
 
@@ -155,6 +193,10 @@ UTF-8 მხარს უჭერს მსოფლიოს სხვად�
     {% include 'html_app/html_home_console.html' %}
     
     <script src="{% static 'html_app\js\html_home_video_2.js' %}">
+    </script>
+    <script src="{% static 'html_app\js\html_home_video_2_file_2.js' %}">
+    </script>
+    <script src="{% static 'html_app\js\html_home_video_2_file_3.js' %}">
     </script>
 
 {% endblock %}

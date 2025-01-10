@@ -150,6 +150,15 @@
     border-radius: 0 10px;
 }
 
+.btn_center{
+    display: grid;
+    justify-content: center;
+}
+
+.html_doc_struct_ul{
+    display: none;
+}
+
 
 
 @media screen and (max-width: 1220px){

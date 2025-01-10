@@ -1,0 +1,8 @@
+.btn_center{
+    display: grid;
+    justify-content: center;
+}
+
+.html_doc_struct_ul{
+    display: none;
+}
