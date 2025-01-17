@@ -159,6 +159,14 @@
     display: none;
 }
 
+.hr_margin{
+    margin: 0 20px;
+}
+
+.h4_style{
+    margin-left: 20px; 
+    font-size: 22px;
+}
 
 
 @media screen and (max-width: 1220px){
