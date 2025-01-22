@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Копирование кода</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .code-box {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Копирование кода</h1>
+    <div class="code-box" id="code">
+&lt;h1&gt;heading 1&lt;/h1&gt;<br>
+&lt;h2&gt;heading 2&lt;/h2&gt;<br>
+&lt;h3&gt;heading 3&lt;/h3&gt;<br>
+&lt;h4&gt;heading 4&lt;/h4&gt;<br>
+&lt;h5&gt;heading 5&lt;/h5&gt;<br>
+&lt;h6&gt;heading 6&lt;/h6&gt;
+    </div>
+    <button id="copy-btn">Скопировать код</button>
+
+    <script>
+        // Функция для копирования кода
+        document.getElementById('copy-btn').addEventListener('click', () => {
+            const code = document.getElementById('code').innerText; // Получение текста из контейнера
+            navigator.clipboard.writeText(code) // Копирование текста в буфер обмена
+                .then(() => {
+                    alert('Код успешно скопирован!'); // Уведомление об успехе
+                })
+                .catch(err => {
+                    alert('Не удалось скопировать код: ' + err); // Уведомление об ошибке
+                });
+        });
+    </script>
+</body>
+</html>
