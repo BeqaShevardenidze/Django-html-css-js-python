@@ -379,8 +379,31 @@
             <div class="script" >
 
                 <h2>ლექციის კოდი</h2>
+
+                <hr class="margin-top-hr">
+
+                <div class="code_cont">
+                    <div class="code_box">
+                        <img src="{% static 'html_app/img/code_box_icons/downlaod-file.png' %}" class="m-left-20" alt="">
+                        <a href="{% static 'video_code/video_2_code/index_video_2.html' %}" download class="btn_code_style color_black">
+                            კოდის <br> გადმოწერა
+                        </a>
+                    </div>
+                    <div class="code_box">
+                        <img src="{% static 'html_app/img/code_box_icons/view.png' %}" class="m-left-20" alt="">
+                        <a href="{% static 'video_code/video_2_code/index_video_2.txt' %}" target="_blank" class="btn_code_style color_black">
+                            კოდის ნახვა
+                        </a>
+                    </div>
+                    <div class="code_box">
+                        <img src="{% static 'html_app/img/code_box_icons/website.png' %}" class="m-left-20 m-left-21" alt="" >
+                        <a href="{% static 'video_code/video_2_code/index_video_2.html' %}" target="_blank" class="btn_code_style color_black">
+                            გვერდის ნახვა
+                        </a>
+                    </div>
+                </div>
                 
-                <div class="video_code_download">
+                <div class="video_code_download" style="display: none;">
                     <a href="{% static 'video_code/video_2_code/index_video_2.html' %}" download class="btn_visible_style color_black">
                         კოდის გადმოწერა
                     </a>
@@ -394,6 +417,31 @@
                     </a>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="html_content_2">
+            <div class="script" >
+                <h2>IMG ფოტოების ტეგი</h2>
+
+                <div class="btn_center ">
+                    <button class="btn_visible_style html_doc_img">ვრცლად</button>
+                </div>
+                <ul class="html_doc_img_ul" style="display: none;">
+                    <li>
+                        <p>
+                            თუ ვსაუბრობთ HTML-ში გამოსახულებების განთავსებაზე, <span> < img > </span> ტეგი გამოიყენება გამოსახულებების ჩასადებად გვერდზე. მისი სტრუქტურა ასეთია:
+
+                            <br>
+
+                            <img src="{% static 'html_app/img/img_tag.png' %}" alt="8" id="image8">
+
+                            <hr class="hr_margin">
+
+
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
 
