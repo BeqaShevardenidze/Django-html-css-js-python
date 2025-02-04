@@ -51,3 +51,14 @@ function f_html_doc_img_btn(){
 html_doc_img_btn.addEventListener('click', () => f_html_doc_img_btn());
 
 
+// ------------Style attribute----------------
+const html_doc_style_btn = document.querySelector('.html_doc_style_btn')
+function f_html_doc_style_btn(){
+    const html_doc_style_ul = document.querySelector('.html_doc_style_ul')
+    if (html_doc_style_ul.style.display === 'block'){
+        html_doc_style_ul.style.display = 'none'
+    } else {
+        html_doc_style_ul.style.display = 'block'
+    }
+}
+html_doc_style_btn.addEventListener('click', () => f_html_doc_style_btn());
