@@ -68,8 +68,12 @@
 }
 
 .html_box_content h5{
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     font-weight: 100;
+}
+
+.ul_li_start li{
+    text-align: start;
 }
 
 .html_box_content a{
@@ -85,3 +89,12 @@
 }
 
 
+
+/* ------------responcive------------ */
+
+@media screen and (max-width: 700px){
+    .html_content{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
