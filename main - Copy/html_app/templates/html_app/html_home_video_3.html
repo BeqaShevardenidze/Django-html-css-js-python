@@ -1,0 +1,59 @@
+{% extends 'home/base.html' %}
+
+{% load static %}
+
+{% block title %} Html Video 2 {% endblock %}
+{% block link %} 
+    <link rel="stylesheet" href="{% static 'html_app/styles/universal_style.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+
+    
+<div class="html_header_video">
+    <div class="html_back_links">
+        <a href="{% url 'home' %}">მთავარი</a>
+        <span>></span>
+        <a href="{% url 'html_home' %}">HTML</a>
+        <span>></span>
+        <span class="span_color">HTML ვიდეო ლექცია 3</span>
+    </div>
+
+    <h1 class="h1_header"> <span>HTML</span> ვიდეო <br> ლექცია 3</h1>
+    <hr>
+
+    <div class="html_video_content">
+        <div class="html_video_content_part_1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nI1O99YsrU8?si=SVty3Djvfwc54Nvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe"></iframe>
+
+            <a href="https://www.youtube.com/watch?v=nI1O99YsrU8&ab_channel=BeqaShevardenidze" class="html_video_content_a_button" target="_blank">ვიდეოზე გადასვლა</a>
+        </div>
+
+        <div class="html_video_content_part_2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ddh9_WGuEUI?si=SWQFOQKJ5uUJ2IUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe"></iframe>
+
+            <a href="https://www.youtube.com/watch?v=Ddh9_WGuEUI&ab_channel=BeqaShevardenidze" class="html_video_content_a_button" target="_blank">ვიდეოზე გადასვლა</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="html_content">
+
+        <div class="script">
+
+        </div>
+        
+    </div>
+
+    <hr>
+
+</div>
+
+
+    {% include 'html_app/html_home_console.html' %}
+    
+    
+
+{% endblock %}

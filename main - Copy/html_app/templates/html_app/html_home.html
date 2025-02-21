@@ -1,0 +1,59 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %} Html Page {% endblock %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'html_app/styles/html_home.css' %}">
+{% endblock %}
+
+
+{% block content %} 
+    <div class="html_header">
+        <div class="html_link">
+            <a href="{% url 'home' %}">მთავარი</a>
+            <span class="span_right">></span>
+            <span class="span_color">HTML გვერდი</span>
+        </div>
+        <h1>HTML გვერდი</h1>
+        <hr>
+    </div>
+
+    <div class="html_content">
+        <div class="html_box">
+            <div class="html_box_content">
+                <h3>Html Video 1</h3>
+                <h5>დასაწყისი: <br> VsCode-ს ინსტალაცია</h5>
+                <a href="{% url 'html_home_video_1' %}">გადასვლა</a>
+            </div>
+        </div>
+
+        <div class="html_box">
+            <div class="html_box_content">
+                <h3>Html Video 2</h3>
+                <h5>ახალი პროექტის შექმნა</h5>
+                <h5>HTML დოკუმენტის სტრუქტურა</h5>
+                <h5>HTML ტეგები:</h5>
+                <ul class="ul_li_start">
+                    <li> p ტეგი </li>
+                    <li> ჰედინგები h1 ... h6</li>
+                    <li> div ტეგი</li>
+                    <li> header, footer, section ტეგები</li>
+                    <li> img ტეგი </li>
+                </ul>
+                <hr>
+                <h5>lorem</h5>
+                <h5>Style ატრიბუტი</h5>
+                <a href="{% url 'html_home_video_2' %}">გადასვლა</a>
+            </div>
+        </div>
+
+        <div class="html_box">
+            <div class="html_box_content">
+                <h3>Html Video 3</h3>
+                <h5>Lorem ipsum, </h5>
+                <a href="{% url 'html_home_video_3' %}">გადასვლა</a>
+            </div>
+        </div>   
+        
+    </div>
+{% endblock %}

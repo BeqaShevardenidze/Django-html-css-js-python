@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% block title %} Html Video 2 {% endblock %}
+{% block title %} Html Video 3 {% endblock %}
 {% block link %} 
     <link rel="stylesheet" href="{% static 'html_app/styles/universal_style.css' %}">
 {% endblock %}
@@ -25,26 +25,58 @@
 
     <div class="html_video_content">
         <div class="html_video_content_part_1">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/nI1O99YsrU8?si=SVty3Djvfwc54Nvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nI1O99YsrU8?si=SVty3Djvfwc54Nvt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe" class="html_video_iframe"></iframe>
 
             <a href="https://www.youtube.com/watch?v=nI1O99YsrU8&ab_channel=BeqaShevardenidze" class="html_video_content_a_button" target="_blank">ვიდეოზე გადასვლა</a>
         </div>
 
         <div class="html_video_content_part_2">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ddh9_WGuEUI?si=SWQFOQKJ5uUJ2IUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ddh9_WGuEUI?si=SWQFOQKJ5uUJ2IUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="html_video_iframe" class="html_video_iframe"></iframe>
 
             <a href="https://www.youtube.com/watch?v=Ddh9_WGuEUI&ab_channel=BeqaShevardenidze" class="html_video_content_a_button" target="_blank">ვიდეოზე გადასვლა</a>
         </div>
     </div>
 
     <hr>
-
     <div class="html_content">
 
         <div class="script">
 
+            <h2 class="script_header_h2">ახალი პროექტის დაწყება</h2>
+            <div class="btn_center">
+                <button class="btn_visible_style visible_btn">ვრცლად</button>
+            </div>
+
+            <ul class="start_new_project_ul visible_ul" style="display: none;">
+                <li class="script_ul_li">
+                    <h3 class="script_ul_li_h3"> 
+                        a ტეგი HTML კოდი ქმნის ჰიპერბმულს (ლინკს), რომელიც გადადის Google-ის მთავარ გვერდზე.
+                        <br> <br>
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="tag">a</div>
+                            <div class="atribute"> href</div>
+                            <div class="equal">=</div>
+                            <div class="value">"https://www.google.com"</div>
+                            <div class="symbol">></div>
+                        </span>
+                    </h3>
+                    <h3 class="script_ul_li_h3">
+                        განმარტება:
+                    </h3>
+                    <ul class="inner_ul">
+                        <li>
+                            <span class="color_tags">&lt; a &gt;</span> - ქმნის ლინკს (ჰიპერბმულს).
+                        </li>
+                        <li>
+                            <span class="color_tags">href="https://www.google.com"</span> - URL-მისამართი, რომელზეც გადადის ბმული (ამ შემთხვევაში, Google-ის გვერდი).
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
         </div>
-        
+
     </div>
 
     <hr>
@@ -53,6 +85,8 @@
 
 
     {% include 'html_app/html_home_console.html' %}
+
+    <script src="{% static 'html_app/js/universal_script.js' %}"></script>
     
     
 
