@@ -42,7 +42,7 @@
 
         <div class="script">
 
-            <h2 class="script_header_h2">ახალი პროექტის დაწყება</h2>
+            <h2 class="script_header_h2">ლინკი ჰიპერბმული</h2>
             <div class="btn_center">
                 <button class="btn_visible_style visible_btn">ვრცლად</button>
             </div>
@@ -52,14 +52,16 @@
                     <h3 class="script_ul_li_h3"> 
                         a ტეგი HTML კოდი ქმნის ჰიპერბმულს (ლინკს), რომელიც გადადის Google-ის მთავარ გვერდზე.
                         <br> <br>
-                        <span class="code_style">
-                            <div class="symbol"><</div>
-                            <div class="tag">a</div>
-                            <div class="atribute"> href</div>
-                            <div class="equal">=</div>
-                            <div class="value">"https://www.google.com"</div>
-                            <div class="symbol">></div>
-                        </span>
+                        <div class="scroll_container">
+                            <span class="code_style">
+                                <div class="symbol"><</div>
+                                <div class="tag">a</div>
+                                <div class="atribute"> href</div>
+                                <div class="equal">=</div>
+                                <div class="value">"https://www.google.com"</div>
+                                <div class="symbol">></div>
+                            </span>
+                        </div>
                     </h3>
                     <h3 class="script_ul_li_h3">
                         განმარტება:
@@ -69,12 +71,280 @@
                             <span class="color_tags">&lt; a &gt;</span> - ქმნის ლინკს (ჰიპერბმულს).
                         </li>
                         <li>
-                            <span class="color_tags">href="https://www.google.com"</span> - URL-მისამართი, რომელზეც გადადის ბმული (ამ შემთხვევაში, Google-ის გვერდი).
+                            <div class="scroll_container">
+                                <span class="color_tags">
+                                    href="https://www.google.com"
+                                </span> 
+                            </div>
+                                - URL-მისამართი, რომელზეც გადადის ბმული (ამ შემთხვევაში, Google-ის გვერდი).
+                        </li>
+                        <li>
+                            <span class="color_tags">Google</span> -
+                            ის ტექსტია, რომელიც გამოჩნდება ბმულად.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3 class="script_ul_li_h3">როგორ იმუშავებს?
+                    </h3>
+                    <ul>
+                        <li>
+                            ბრაუზერში ეს გამოჩნდება ასე:
+                            -
+                            <a href="https://www.google.com" style="color: rgb(0, 136, 255);">Google</a>
+                        </li>
+                        <li>
+                            როცა დააწკაპუნებ "Google"-ზე, გაიხსნება Google-ის მთავარი გვერდი.
+                        </li>
+                    </ul>
+                    <hr>
+                    <h3 class="script_ul_li_h3">
+                        დამატებითი პარამეტრები:
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4>ლინკის გახსნა ახალ ფანჯარაში:</h4>
+                            <div class="scroll_container">
+                                <span class="code_style">
+                                    <div class="symbol"><</div>
+                                    <div class="tag">a</div>
+                                    <div class="atribute">href</div>
+                                    <div class="equal">=</div>
+                                    <div class="value">"https://www.google.com"</div>
+                                    <div class="atribute">target</div>
+                                    <div class="equal">=</div>
+                                    <div class="value">"_blank"</div>
+                                    <div class="symbol">></div>
+                                    Google
+                                    <div class="symbol"><</div>
+                                    <div class="symbol">/</div>
+                                    <div class="tag">a</div>
+                                    <div class="symbol">></div>
+                                </span>
+                            </div>
+                            <br>
+                            <span class="color_tags"> target="_blank"</span>
+                            - გახსნის ბმულს ახალ ფანჯარაში ან ჩანართში.
+                        </li>
+                        <li>
+
+                            <h4>ლინკი ტელეფონის ნომერზე (დარეკვა):</h4>
+                            
+                            <!-- დაკოპირება -->
+                            <pre id="codeBlock" style="display: none;">
+<pre>&lt;a href="tel:+995599123456">დარეკვა&lt;/a&gt;</pre>
+                            </pre>
+
+                            <div class="btn_copy">
+                                <div onclick="copyCode()" class="btn_copy_style">კოპირება</div>
+                            </div>
+                            
+                            <div class="scroll_container">
+                                <span class="code_style">
+                                    <div class="symbol"><</div>
+                                    <div class="tag">a</div>
+                                    <div class="atribute">href</div>
+                                    <div class="equal">=</div>
+                                    <div class="value">"tel:+995599123456"</div>
+                                    <div class="symbol">></div>
+                                    დარეკვა
+                                    <div class="symbol"><</div>
+                                    <div class="symbol">/</div>
+                                    <div class="tag">a</div>
+                                    <div class="symbol">></div>
+                                </span>
+                            </div>
                         </li>
                     </ul>
                 </li>
             </ul>
+        </div>
 
+        <div class="script">
+            <h2 class="script_header_h2">ლინკში (ჰიპერბმულში) ჩასმული სურათის ტეგი IMG</h2>
+            <div class="btn_center">
+                <button class="btn_visible_style visible_btn_2">ვრცლად</button>
+            </div>
+
+            <ul class="start_new_project_ul visible_ul_2" style="display: none;">
+                <li class="script_ul_li">
+                    <h3 class="script_ul_li_h3">
+                        ეს კოდი წარმოადგენს ჰიპერბმულს <span class="color_tags">< a ></span>, რომელშიც ჩასმულია სურათი <span class="color_tags">
+                            < img >
+                        </span> .
+                        როდესაც მომხმარებელი დააწკაპუნებს ამ სურათზე, ის გადამისამართდება Google-ის ვებსაიტზე.
+                    </h3>
+
+                    <h3 class="script_ul_li_h3">
+                        კოდის ანალიზი:
+                    </h3>
+
+                    <!-- კოდის კოპირება -->
+                    <pre id="codeBlock" style="display: none;">
+<pre>
+&lt;a href="https://www.google.com"&gt;
+    &lt;img src="https://emojiisland.com/cdn/shop/products/Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.png?v=1571606089" 
+    alt="Emoji" style="width: 100px; height: 100px;"&gt;
+&lt;/a&gt;
+</pre>
+                    </pre>
+                    <div class="btn_copy">
+                        <div onclick="copyCode()" class="btn_copy_style">კოპირება</div>
+                    </div>
+
+                    <div class="scroll_container">
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="tag">a</div>
+                            <div class="atribute">href</div>
+                            <div class="equal">=</div>
+                            <div class="value">"https://www.google.com"</div>
+                            <div class="symbol">></div>
+                        </span>
+    
+                        <span class="code_style" style="padding-left: 25px; margin-top:-5px">
+                            <div class="symbol"><</div>
+                            <div class="tag">img</div>
+                            <div class="atribute">src</div>
+                            <div class="equal">=</div>
+                            <div class="value">"emoji link"</div>
+                            <div class="atribute">alt</div>
+                            <div class="equal">=</div>
+                            <div class="value">"Emoji"</div>
+                            <div class="atribute">style</div>
+                            <div class="equal">=</div>
+                            <div class="value">"width: 100px; height: 100px;"</div>
+                            <div class="symbol">></div>
+                        </span>
+    
+                        <span class="code_style" style="margin-top:-5px">
+                            <div class="symbol"><</div>
+                            <div class="symbol">/</div>
+                            <div class="tag">a</div>
+                            <div class="symbol">></div>
+                        </span>
+                    </div>
+
+                    <hr>
+
+                    <h3 class="script_ul_li_h3">
+                        რას აკეთებს ეს კოდი?
+                    </h3>
+
+                    <ul class="ul_margin_bottom">
+                        <li>
+                            <span class="color_tags">
+                                < a href="https://www.google.com"></ a>
+                            </span>
+                            ქმნის ლინკს Google-ის ვებსაიტზე.
+                        </li>
+                        <li>
+                            <span class="color_tags">
+                                < img >
+                            </span>
+                            აჩვენებს სურათს
+
+                            <ul class="ul_margin_bottom">
+                                <li>
+                                    <span class="color_tags">
+                                        src="..."
+                                    </span>
+                                    სურათის ბმული
+                                </li>
+                                <li>
+                                    <span class="color_tags">alt="Emoji"</span>
+                                    ალტერნატიული ტექსტი (სურათი თუ არ ჩაიტვირთება, ეს ტექსტი გამოჩნდება).
+                                </li>
+                                <li>
+                                    <span class="color_tags">style="width: 100px; height: 100px;"</span>
+                                    განსაზღვრავს სურათის ზომას (100x100px).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="color_tags">
+                                < /a > 
+                            </span>
+                            ხურავს ლინკს
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="script">
+            <h2 class="script_header_h2">ლინკის ახალ ფანჯარაში გახსნა</h2>
+            <div class="btn_center">
+                <button class="btn_visible_style visible_btn_3">ვრცლად</button>
+            </div>
+
+            <ul class="start_new_project_ul visible_ul_3" style="display: none;">
+                <li class="script_ul_li">
+                    <h3 class="script_ul_li_h3">
+                        როდესაც მომხმარებელი დააჭერს ემოჯის 
+                        <span class="color_tags">
+                            target="_blank"
+                        </span> 
+                        -ით ლინკი გაიხსნება ახალ ფანჯარაში
+                    </h3>
+
+                    <h3 class="script_ul_li_h3">
+                        აგალითად:
+                    </h3>
+
+                    <!-- კოდის კოპირება -->
+                    <pre id="codeBlock1" style="display: none;">
+<pre>
+&lt;a href="https://www.google.com" target="_blank"&gt;
+    &lt;img src="https://emojiisland.com/cdn/shop/products/Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.png?v=1571606089" 
+    alt="Emoji" style="width: 100px; height: 100px;"&gt;
+&lt;/a&gt;
+</pre>
+                    </pre>
+                    <div class="btn_copy">
+                        <div onclick="copyCode()" class="btn_copy_style">კოპირება</div>
+                    </div>
+
+                    <div class="scroll_container">
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="tag">a</div>
+                            <div class="atribute">href</div>
+                            <div class="equal">=</div>
+                            <div class="value">"https://www.google.com"</div>
+
+                            <div class="atribute">target</div>
+                            <div class="equal">=</div>
+                            <div class="value">"_blank"</div>
+                            <div class="symbol">></div>
+                        </span>
+
+                        <span class="code_style" style="padding-left: 25px;">
+                            <div class="symbol"><</div>
+                            <div class="tag">img</div>
+                            <div class="atribute">src</div>
+                            <div class="equal">=</div>
+                            <div class="value">"emoji link"</div>
+
+                            <div class="atribute">alt</div>
+                            <div class="equal">=</div>
+                            <div class="value">"Emoji"</div>
+
+                            <div class="atribute">style</div>
+                            <div class="equal">=</div>
+                            <div class="value">"width: 100px; height: 100px;"</div>
+                            <div class="symbol">></div>
+                        </span>
+
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="symbol">/</div>
+                            <div class="tag">a</div>
+                            <div class="symbol">></div>
+                        </span>
+                    </div>
+                </li>
+            </ul>
         </div>
 
     </div>

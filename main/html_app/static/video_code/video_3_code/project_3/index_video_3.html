@@ -31,7 +31,26 @@
         აქ გადავა <br> მეორე ხაზზე
       </p>
 
-      
+      <pre id="codeBlock" style="display: none;">
+         <pre>
+            &lt;a href="https://www.google.com" target="_blank"&gt;
+                &lt;img src="https://emojiisland.com/cdn/shop/products/Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.png?v=1571606089" 
+                alt="Emoji" style="width: 100px; height: 100px;"&gt;
+            &lt;/a&gt;
+        </pre>
+    </pre>
+    
+    <button onclick="copyCode()">კოპირება</button>
+    
+    <script>
+        function copyCode() {
+            let code = document.getElementById("codeBlock").textContent; // კოდის ამოღება
+            navigator.clipboard.writeText(code)
+                .then(() => alert("კოდი დაკოპირდა!"))
+                .catch(err => console.error("შეცდომა კოპირებისას:", err));
+        }
+    </script>
+    
 
 
 </body>

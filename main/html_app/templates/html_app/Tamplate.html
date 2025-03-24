@@ -1,0 +1,60 @@
+
+
+
+
+
+<div class="script">
+    <h2 class="script_header_h2">ლინკის ახალ ტაბზე გახსნა</h2>
+    <div class="btn_center">
+        <button class="btn_visible_style visible_btn_3">ვრცლად</button>
+    </div>
+
+    <ul class="start_new_project_ul visible_ul_3" style="display: none;">
+        <li class="script_ul_li">
+            <h3 class="script_ul_li_h3">
+                        
+            </h3> 
+        </li>
+    </ul>
+</div>
+
+
+
+<span class="color_tags">
+    <!-- მონიშნული ტეგისთვის -->
+</span>
+
+
+<!-- გვერდზე გამოსახული კოდისთვის, რესპონსიულობით ამატებს სქროლს -->
+<div class="scroll_container">
+    <span class="code_style">
+        <div class="symbol"><</div>
+        <div class="tag">a</div>
+        <div class="atribute">href</div>
+        <div class="equal">=</div>
+        <div class="value">"https://www.google.com"</div>
+        <div class="symbol">></div>
+    </span>
+</div>
+
+
+
+<pre id="codeBlock" style="display: none;">
+    <pre>
+       &lt;a href="https://www.google.com" target="_blank"&gt;
+           &lt;img src="https://emojiisland.com/cdn/shop/products/Flushed_Emoji_Icon_5e6ce936-4add-472b-96ba-9082998adcf7_large.png?v=1571606089" 
+           alt="Emoji" style="width: 100px; height: 100px;"&gt;
+       &lt;/a&gt;
+   </pre>
+</pre>
+
+<button onclick="copyCode()">კოპირება</button>
+    
+ <script>
+     function copyCode() {
+         let code = document.getElementById("codeBlock").innerText;
+         navigator.clipboard.writeText(code)
+             .then(() => alert("კოდი დაკოპირდა!"))
+             .catch(err => console.error("შეცდომა კოპირებისას:", err));
+     }
+ </script>

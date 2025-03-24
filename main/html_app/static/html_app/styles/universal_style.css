@@ -172,6 +172,25 @@
     color: #abb2bf;
 }
 
+.ul_margin_bottom li{
+    margin-bottom: 10px;
+}
+
+
+.btn_copy{
+    display: grid;
+    align-items:center ;
+    justify-content: end;
+    padding: 7px 0;
+    /* border: solid black 2px; */
+    background-color: #33363b;
+}
+
+.btn_copy_style{
+    cursor:pointer;
+    margin-right: 5px;
+}
+
 /* ------------responcive------------ */
 
 @media screen and (max-width: 1220px){
@@ -186,3 +205,23 @@
         height: 200px;
     }
 }
+
+@media screen and (max-width: 700px){
+    .script{
+        width: 100%;
+    }
+
+    .script_ul_li{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .scroll_container{
+        background-color: #282c34;
+        width: 100%;
+        overflow-y: auto;
+        white-space: nowrap; /* რომ ტექსტი არ გადატყდეს ახალ ხაზზე */
+    }
+}
+
