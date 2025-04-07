@@ -21,8 +21,3 @@ f_visible('.visible_btn_7', '.visible_ul_7')
 
 
 
-// html კოდის კოპირება
-function copyCode() {
-    let code = document.getElementById("codeBlock").innerText;
-    navigator.clipboard.writeText(code).then(() => alert("კოდი დაკოპირდა!")).catch(err => console.error("შეცდომა კოპირებისას:", err));
-}

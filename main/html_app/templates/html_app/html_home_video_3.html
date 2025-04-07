@@ -289,7 +289,7 @@
                     </h3>
 
                     <h3 class="script_ul_li_h3">
-                        აგალითად:
+                        მაგალითად:
                     </h3>
 
                     <!-- კოდის კოპირება -->
@@ -344,9 +344,65 @@
                         </span>
                     </div>
                 </li>
-            </ul>
+            </ul>            
         </div>
 
+        <div class="script">
+            <h2 class="script_header_h2">ახალ ხაზზე გადასვლის ტეგი HTML-ში</h2>
+            <div class="btn_center">
+                <button class="btn_visible_style visible_btn_4">ვრცლად</button>
+            </div>
+            <ul class="start_new_project_ul visible_ul_4" style="display: none;">
+                <li class="script_ul_li">
+                    <h3 class="script_ul_li_h3">
+                        <span class="color_tags">
+                            < br > 
+                        </span>
+                        გამოიყენება, როცა გინდა ტექსტი გადახვიდეს ახალ ხაზზე, როგორც პოეზიაში, მისამართებში ან მოკლე ტექსტურ ბლოკებში.
+                    </h3>
+                    <h3 class="script_ul_li_h3">
+                        მაგალითი:
+                    </h3>
+
+                    <div class="btn_copy">
+                        <div onclick="copyCode()" class="btn_copy_style">კოპირება</div>
+                    </div>
+
+                    <div class="scroll_container">
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="tag">p</div>
+                            <div class="symbol">></div>
+                            <br>
+                        </span>
+                        
+                        <span class="code_style"  style="padding-left: 25px;">
+                            აქ გადავა &lt;br&gt; მეორე ხაზზე
+                        </span>
+                        
+                        <span class="code_style">
+                            <div class="symbol"><</div>
+                            <div class="symbol">/</div>
+                            <div class="tag">p</div>
+                            <div class="symbol">></div>
+                            <br>
+                        </span>
+                    </div>
+
+                    <h3 class="script_ul_li_h3">
+                        როცა ეს ბრაზუსერში გამოჩნდება, იქნება ასე:
+                    </h3>
+
+                    <div class="scroll_container">
+                        <div class="code_style">
+                            აქ გადავა <br>
+                            მეორე ხაზზე
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
     </div>
 
     <hr>
@@ -357,6 +413,7 @@
     {% include 'html_app/html_home_console.html' %}
 
     <script src="{% static 'html_app/js/universal_script.js' %}"></script>
+    <script src="{% static 'html_app/js/copy_text.js' %}"></script>
     
     
 
