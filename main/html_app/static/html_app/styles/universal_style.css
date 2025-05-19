@@ -193,7 +193,40 @@
 
 .h4_margin_0{
     margin: 0;
+    color: rgb(211, 200, 186);
 }
+
+/* დაპატარავების დროს ერთმანეთს ედებოდა */
+.p_test{
+    word-wrap: break-word;       /* საჭიროების შემთხვევაში გატეხოს სიტყვა */
+  overflow-wrap: break-word;   /* newer standard */
+  white-space: normal;         /* არ დაიტოვოს სიტყვები ერთ ხაზზე */
+  line-height: 2;            /* საკმარისი სიმაღლე ხაზებს შორის */
+  margin: 0 0 1em 0; 
+}
+
+
+
+.hr_padding_2{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.box_download_main{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.box_download{
+    width: 200px;
+    height: 200px;
+    background-color: #06d6a0;
+    border-radius: 20px;
+}
+
 
 /* ------------responcive------------ */
 
@@ -220,6 +253,14 @@
     }
 }
 
+@media screen and (max-width: 1273px){
+    .scroll_container2{
+        background-color: #282c34;
+        width: 100%;
+        overflow-y: auto;
+        white-space: nowrap; /* რომ ტექსტი არ გადატყდეს ახალ ხაზზე */
+    }
+}
 @media screen and (max-width: 1050px){
     .scroll_container{
         background-color: #282c34;
@@ -229,3 +270,9 @@
     }
 }
 
+@media screen and (max-width: 1055px){
+    .box_download_main{
+        display: grid;
+    }
+
+}
