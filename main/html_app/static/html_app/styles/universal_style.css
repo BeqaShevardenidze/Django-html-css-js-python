@@ -221,12 +221,47 @@
 }
 
 .box_download{
+    display: grid;
+    align-items: center;
+    justify-content: center;
     width: 200px;
     height: 200px;
     background-color: #06d6a0;
     border-radius: 20px;
 }
 
+.box_download img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_download a{
+    padding: 10px;
+    border-radius: 20px;
+    background-color:#56b6c2;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.img_box{
+    margin-left: 10px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a_box{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 /* ------------responcive------------ */
 
@@ -273,6 +308,7 @@
 @media screen and (max-width: 1055px){
     .box_download_main{
         display: grid;
+        height: 800px;
     }
 
 }

@@ -634,9 +634,22 @@
             <h2 class="script_header_h2">ლექციის კოდი</h2>
             <hr class="hr_padding_2">
             <div class="box_download_main">
-                <div class="box_download"></div>
-                <div class="box_download"></div>
-                <div class="box_download"></div>
+                <div class="box_download">
+                    <img src="{% static 'html_app/img/code_box_icons/downlaod-file.png' %}" alt="downlaod">
+                    <a href="{% static 'video_code/video_3_code/Download_3.rar' %}">გადმოწერა</a>
+                </div>
+                <div class="box_download">
+                    <img src="{% static 'html_app/img/code_box_icons/view.png' %}" alt="downlaod">
+                    <a href="{% static 'video_code/video_3_code/view_code/view_code.html' %}">კოდის ნახვა</a>
+                </div>
+                <div class="box_download">
+                    <div class="img_box">
+                        <img src="{% static 'html_app/img/code_box_icons/downlaod-file.png' %}" alt="downlaod">
+                    </div>
+                    <div class="a_box">
+                        <a href="{% static '/video_code/video_3_code/project_3/index_video3_2_file.html' %}">ვებზე გადასვლა</a>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -654,5 +667,5 @@
     <script src="{% static 'html_app/js/copy_text.js' %}"></script>
     
 
-    
+
 {% endblock %}
